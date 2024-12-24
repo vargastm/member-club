@@ -1,0 +1,27 @@
+:root {
+  /* Colors */
+  --pink: #D658B3;   
+  --green: #45B442;
+  --white: #FFFFFF;
+
+  --gray-100: #F4F1F2;
+  --gray-200: #E9E7E9;
+  --gray-300: #DFDCDF;
+  --gray-400: #D3CFD2;
+  --gray-500: #756C71;
+  --gray-600: #4A4448;
+  --gray-700: #332B31;
+
+  /* Fonts */
+  --font-family-primary: 'Oxygen', sans-serif;
+
+  --title-md: normal normal bold 24px/140% var(--font-family-primary);
+  --title-sm: normal normal bold 18px/140% var(--font-family-primary);
+
+  --subtitle-md: normal normal bold 14px/140% var(--font-family-primary);
+  --subtitle-sm: normal normal bold 12px/140% var(--font-family-primary);
+
+  --text-md: normal normal normal 16px/140% var(--font-family-primary);
+  --text-sm: normal normal normal 14px/140% var(--font-family-primary);
+  --text-xs: normal normal normal 12px/140% var(--font-family-primary);
+}

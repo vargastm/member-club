@@ -1,0 +1,89 @@
+/* GENERAL */
+body {
+  background-color: var(--gray-200);
+}
+
+header {
+  padding-top: 64px;  
+}
+
+header img {
+  max-width: 116px;
+  margin-inline: auto;
+}
+
+.search-id {
+  margin-block: 32px 64px;
+  margin-inline: auto;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+
+}
+
+input {
+  background-color: var(--gray-300);
+  border: 1px solid var(--gray-400);
+  height: 56px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 17px;
+  display: block;
+}
+
+.search-id button {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  height: 40px;
+  width: 40px;
+  border: none;
+  background-color: var(--gray-700);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-id img {
+  max-width: 20px;
+}
+
+.content {
+  display: flex;
+  max-width: 912px;
+  margin-inline: auto;
+  max-height: 466px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.cliente-infos {
+  width: 100%;
+  max-width: 320px;
+  background-color: var(--gray-100);
+  display: flex;
+  order: -2;
+}
+
+.cliente-infos img {
+  border-radius: 10px;
+  max-width: 56px;
+}
+
+.cliente-infos p {
+  font: var(--title-sm);
+}
+
+.client-card { 
+  width: 100%;
+  max-width: 568px;
+  background-color: var(--gray-100);
+}
+
+.history {
+  height: 360px;
+  background-color: var(--gray-100);
+  order: -1;
+}
