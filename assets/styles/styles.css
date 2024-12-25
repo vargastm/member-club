@@ -31,6 +31,16 @@ input {
   display: block;
 }
 
+input:focus {
+  outline: 1.5px solid var(--pink);
+}
+
+h2 {
+  font: var(--subtitle-sm);
+  color: var(--gray-500);
+  text-transform: uppercase;
+}
+
 .search-id button {
   position: absolute;
   right: 8px;
@@ -59,31 +69,299 @@ input {
   gap: 16px;
 }
 
-.cliente-infos {
+.content-block {
   width: 100%;
-  max-width: 320px;
   background-color: var(--gray-100);
+  border-radius: 16px;
+  border: 1px solid var(--gray-300);
+}
+
+.cliente-infos {
+  max-width: 320px;
   display: flex;
-  order: -2;
+  padding: 16px;
 }
 
 .cliente-infos img {
   border-radius: 10px;
   max-width: 56px;
+  margin-right: 16px;
 }
 
 .cliente-infos p {
+  font: var(--text-xs);
+  color: var(--gray-500);
+}
+
+.cliente-infos #username {
   font: var(--title-sm);
+  color: var(--gray-600);
+  margin-bottom: 4px;
 }
 
 .client-card { 
-  width: 100%;
   max-width: 568px;
-  background-color: var(--gray-100);
+  height: 333px;
+  padding: 36px 32px 32px 32px;
+}
+
+.client-card p {
+  font: var(--text-sm);
+  color: var(--gray-500);
+}
+
+.client-card .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.client-card span {
+  background-color: var(--gray-300);
+  padding: 6px 12px;
+  border-radius: 99px;
+  font: var(--subtitle-md);
+  color: var(--gray-500);
+}
+
+.client-card .row-1 {
+  margin-block: 32px 16px;
+}
+
+.client-card .row-1,
+.client-card .row-2 {
+  display: flex;
+  gap: 16px;
+}
+
+.client-card .row-1 div,
+.client-card .row-2 div {
+  height: 88px;
+  width: 88px;
+  background-color: var(--gray-200);
+  border-radius: 20px;
+}
+
+.checked {
+  background-image: url('../images/pin-check.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 64px;
+}
+
+.gift-icon {
+  background-image: url('../images/gift-gray.svg');
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .history {
   height: 360px;
-  background-color: var(--gray-100);
-  order: -1;
+  max-width: 328px;
+  padding: 28px 24px;
+}
+
+.history .header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.history .header p {
+  font: var(--text-xs);
+  color: var(--gray-500);
+}
+
+.history-dates {
+  padding-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.history-dates > div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.history-dates .date {
+  font: var(--subtitle-sm);
+  color: var(--gray-600);
+}
+
+.history-dates .hour {
+  font: var(--text-xs);
+  color: var(--gray-500);
+}
+
+.history .verify-image {
+  background-color: var(--green-300);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.history .verify-image img {
+  width: 24px;
+}
+
+.progress-gift {
+  max-width: 568px;
+  height: 117px;
+  padding: 22.5px 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-gift p {
+  font: var(--text-md);
+  color: var(--gray-500);
+}
+
+.progress-gift span {
+  font: var(--title-md);
+  color: var(--gray-600);
+}
+
+.progress-gift .progress p {
+  font: var(--text-xs);
+  color: var(--gray-500);
+}
+
+.content-progress {
+  width: 100%;
+  max-width: 400px;
+}
+
+.progress {
+  display: flex;
+  margin-top: 16px;
+  align-items: center;
+}
+
+.progress-container {
+  height: 8px;
+  background-color: var(--gray-300);
+  border-radius: 15px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 350px;
+  margin-right: 12px;
+}
+
+#progress-bar {
+  height: 100%;
+  background: linear-gradient(var(--gradient));
+  width: 0%;
+  border-radius: 15px;
+  transition: width 0.3s ease-in-out;
+}
+
+.gift-pin img {
+  max-width: 72px;
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-inline: 12px;
+    padding-bottom: 24px;
+  }
+
+  header {
+    padding-top: 32px;
+  }
+
+  .search-id {
+    margin-block: 16px 20px;
+  }
+
+  .content {
+    max-height: 100%;
+  }
+
+  .cliente-infos,
+  .history {
+    max-width: 100%;
+  }
+
+  .history {
+    order: 1;
+    padding: 24px 20px 20px 20px
+  }
+
+  .client-card {
+    padding: 24px 20px 20px 20px;
+    height: auto;
+  }
+
+  .client-card .header {
+    align-items: start;
+  }
+
+  .client-card span {
+    white-space: nowrap;
+    font: var(--subtitle-sm);
+  }
+
+  .client-card p {
+    font: var(--text-xs);
+  }
+  
+  .client-card .row-1 {
+    margin-block: 20px 8px;
+  }
+
+  .client-card .row-1, 
+  .client-card .row-2 {
+    gap: 8px;
+  }
+
+  .client-card .row-1 div, 
+  .client-card .row-2 div {
+    height: 56px;
+    width: 56px;
+  }
+
+  .checked {
+    background-size: 40px;
+  }
+
+  .progress-gift {
+    padding: 21px 20px;
+    height: auto;
+  }
+
+  .progress-gift p {
+    font: var(--text-md);
+  }
+
+  .progress-gift p span {
+    font: var(--title-sm);
+  }
+
+  .gift-icon {
+    background-size: 24px;
+  }
+
+  .progress-container {
+    max-width: 182px;
+  }
+
+  .gift-pin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .gift-pin img {
+    max-width: 56px;
+  }
+
+  .progress {
+    margin-top: 4px;
+  }
 }
