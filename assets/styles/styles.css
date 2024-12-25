@@ -82,10 +82,17 @@ h2 {
   padding: 16px;
 }
 
+.gradient-border {
+  padding: 3px;
+  background: linear-gradient(var(--gradient));
+  border-radius: 13px;
+  margin-right: 10px;
+}
+
 .cliente-infos img {
+  outline: 1.5px solid var(--white);
   border-radius: 10px;
-  max-width: 56px;
-  margin-right: 16px;
+  max-width: 50px;
 }
 
 .cliente-infos p {
@@ -157,7 +164,7 @@ h2 {
 
 .history {
   height: 360px;
-  max-width: 328px;
+  max-width: 320px;
   padding: 28px 24px;
 }
 
