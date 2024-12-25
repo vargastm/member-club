@@ -1,0 +1,11 @@
+{
+  "name": "member-club",
+  "description": "Aplicação para cartão de fidelidade de clientes",
+  "author": "Tiago Martins Vargas",
+  "scripts": {
+    "server": "json-server --watch clients.json --port 3000"
+  },
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}

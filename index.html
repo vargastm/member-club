@@ -19,10 +19,10 @@
     <img src="./assets/images/logo.svg" alt="Members Club">
   </header>
   <main>
-    <div class="search-id">
-      <input type="text" placeholder="ID do cartão">
-      <button><img src="./assets/images/arrow.svg" alt="Enter"></button>
-    </div>
+    <form id="search-id">
+      <input type="text" placeholder="ID do cartão" id="card-id">
+      <button type="submit" id="submit-button" disabled><img src="./assets/images/arrow.svg" alt="Enter"></button>
+    </form>
     <div class="content">
       <div class="cliente-infos content-block ">
         <div class="gradient-border">
@@ -107,6 +107,6 @@
       </div>
     </div>
   </main>
-  <script src="./assets/js/teste.js"></script>
+  <script type="module" src="./assets/services/main.js"></script>
 </body>
 </html>
