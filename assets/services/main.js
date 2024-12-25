@@ -3,3 +3,4 @@
 import "./api-config.js"
 import "./search-client.js"
 import "./progress-bar.js"
+import "./modal.js"
